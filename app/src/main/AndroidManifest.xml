@@ -15,7 +15,7 @@
         android:theme="@style/Theme.ReddyApi"
         tools:targetApi="31">
         <activity
-            android:name=".object1.List2Activity"
+            android:name=".weather.WeatherActivity"
             android:exported="true">
 
             <intent-filter>
@@ -28,10 +28,24 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".multipleObject.List1Activity"
+            android:name=".git.GitActivity"
             android:exported="true">
 
 
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".object1.List2Activity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".multipleObject.List1Activity"
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
