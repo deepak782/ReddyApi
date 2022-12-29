@@ -15,6 +15,13 @@
         android:theme="@style/Theme.ReddyApi"
         tools:targetApi="31">
         <activity
+            android:name=".gorest.activites.UpdateUserActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".gorest.activites.CreateUserActivity"
             android:exported="false">
             <meta-data

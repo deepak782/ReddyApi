@@ -41,6 +41,12 @@ class GorestListActivity : AppCompatActivity() {
             startActivity(Intent(this@GorestListActivity,CreateUserActivity::class.java))
         }
 
+        binding.updateBtn.setOnClickListener {
+
+            startActivity(Intent(this@GorestListActivity,UpdateUserActivity::class.java))
+        }
+
+
 
     }
 
@@ -48,6 +54,7 @@ class GorestListActivity : AppCompatActivity() {
         progressDialog.show()
         progressDialog.setMessage("laoding.....")
 
+        arrayList.clear()
         val call=gorestApi.goRestList();
 
         call.enqueue(object :Callback<List<GorestList>>{
